@@ -14,7 +14,7 @@ export function MaskGlow({ className, animated = true }: { className?: string; a
         className="relative h-full w-full"
         fill="none"
         role="img"
-        aria-label="Illustration of the Lumora Glow Mask, glowing red"
+        aria-label="Illustration of the Velunna Glow Mask, glowing red"
       >
         <defs>
           <linearGradient id="glowStroke" x1="0" y1="0" x2="0" y2="1">

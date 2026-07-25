@@ -27,7 +27,7 @@ export function Science() {
         <p className="mt-6 text-lg leading-relaxed text-stone">
           Dermatologists and estheticians have used red and near-infrared
           light in clinics for years — sessions that typically run $100–$250
-          each. Lumora brings the same wavelength ranges home, in a mask you
+          each. Velunna brings the same wavelength ranges home, in a mask you
           wear for 10 minutes before bed.
         </p>
       </div>
@@ -43,7 +43,7 @@ export function Science() {
       </div>
 
       <p className="mt-8 text-xs leading-relaxed text-stone/70">
-        Lumora Glow Mask is not a medical device and is not intended to
+        Velunna Glow Mask is not a medical device and is not intended to
         diagnose, treat, cure, or prevent any disease. Individual results
         vary with consistent use.
       </p>

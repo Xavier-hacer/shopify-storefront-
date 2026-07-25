@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Is this a medical device?",
-    a: "No — Lumora Glow Mask is not a medical device and isn't intended to diagnose, treat, cure, or prevent any disease. It's a light-therapy wellness tool, and individual results vary with consistent use.",
+    a: "No — Velunna Glow Mask is not a medical device and isn't intended to diagnose, treat, cure, or prevent any disease. It's a light-therapy wellness tool, and individual results vary with consistent use.",
   },
   {
     q: "Does it need to be plugged in during use?",

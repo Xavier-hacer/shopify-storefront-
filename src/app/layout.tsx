@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Lumora Glow Mask™ | Red Light Therapy at Home",
+  title: "Velunna Glow Mask™ | Red Light Therapy at Home",
   description:
     "Clinical-grade red and near-infrared light therapy in a cordless, eye-safe mask. 10 minutes a night for visibly firmer, calmer, more radiant skin.",
 };

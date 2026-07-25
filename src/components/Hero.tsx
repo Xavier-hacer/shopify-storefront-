@@ -32,7 +32,7 @@ export function Hero() {
           </h1>
           <p className="mt-6 max-w-md text-balance text-lg leading-relaxed text-stone">
             Med-spa red light therapy, brought home. 10 minutes a night with
-            the Lumora Glow Mask for visibly firmer, calmer, more radiant
+            the Velunna Glow Mask for visibly firmer, calmer, more radiant
             skin.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">

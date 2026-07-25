@@ -3,7 +3,7 @@ import { QuantityBuyBox } from "./QuantityBuyBox";
 import type { Product } from "@/lib/types";
 
 const included = [
-  "1x Lumora Glow Mask",
+  "1x Velunna Glow Mask",
   "1x USB-C charging cable",
   "1x Quick-start guide",
 ];
@@ -33,7 +33,7 @@ export function Buy({ product }: { product: Product }) {
 
         <div>
           <p className="text-xs uppercase tracking-[0.3em] text-stone">
-            Lumora Glow Mask™
+            Velunna Glow Mask™
           </p>
           <h2 className="mt-4 font-display text-4xl leading-tight text-porcelain sm:text-5xl">
             Your glow, on your schedule.
