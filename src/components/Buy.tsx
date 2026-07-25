@@ -1,5 +1,5 @@
 import { MaskGlow } from "./MaskGlow";
-import { AddToCartButton } from "./AddToCartButton";
+import { QuantityBuyBox } from "./QuantityBuyBox";
 import type { Product } from "@/lib/types";
 
 const included = [
@@ -52,12 +52,13 @@ export function Buy({ product }: { product: Product }) {
             ))}
           </ul>
 
-          <div className="mt-10 max-w-xs">
+          <div className="mt-10 max-w-md">
             {variant ? (
-              <AddToCartButton
+              <QuantityBuyBox
                 variantId={variant.id}
                 available={variant.availableForSale}
-                label={`Add to Cart — ${price}`}
+                unitAmount={variant.price.amount}
+                currencyCode={variant.price.currencyCode}
               />
             ) : (
               <p className="text-sm text-stone">Currently unavailable.</p>
