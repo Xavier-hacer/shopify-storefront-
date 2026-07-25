@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #0a0908;
+  --ink-raised: #131110;
+  --porcelain: #f3efe9;
+  --stone: #9a9188;
+  --ember: #ff5a3c;
+  --ember-soft: #ff8a5c;
+  --nir: #ffb066;
+  --line: rgba(243, 239, 233, 0.1);
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-raised: var(--ink-raised);
+  --color-porcelain: var(--porcelain);
+  --color-stone: var(--stone);
+  --color-ember: var(--ember);
+  --color-ember-soft: var(--ember-soft);
+  --color-nir: var(--nir);
+  --color-line: var(--line);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+body {
+  background: var(--ink);
+  color: var(--porcelain);
+}
+
+::selection {
+  background: var(--ember);
+  color: var(--ink);
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.06); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 5s ease-in-out infinite;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-2%, -3%); }
+  30% { transform: translate(3%, 2%); }
+  50% { transform: translate(-3%, 3%); }
+  70% { transform: translate(2%, -2%); }
+  90% { transform: translate(-2%, 2%); }
+}
