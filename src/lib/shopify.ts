@@ -2,7 +2,7 @@ import "server-only";
 import type { Product } from "./types";
 
 const domain = process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN;
-const privateToken = process.env.SHOPIFY_STOREFRONT_PRIVATE_TOKEN;
+const publicToken = process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_TOKEN;
 const apiVersion = "2024-10";
 
 async function shopifyFetch<T>(query: string, variables?: Record<string, unknown>): Promise<T> {
@@ -10,7 +10,7 @@ async function shopifyFetch<T>(query: string, variables?: Record<string, unknown
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Shopify-Storefront-Private-Token": privateToken!,
+      "X-Shopify-Storefront-Access-Token": publicToken!,
     },
     body: JSON.stringify({ query, variables }),
     next: { revalidate: 300 },
