@@ -1,6 +1,11 @@
-import { MaskGlow } from "./MaskGlow";
+import Image from "next/image";
+import type { Product } from "@/lib/types";
 
-export function Hero() {
+export function Hero({ product }: { product: Product | null }) {
+  const heroImage =
+    product?.images.find((img) => img.url.includes("a92f6ea5429aab3c")) ??
+    product?.images[product.images.length - 1];
+
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden pt-24">
       <div
@@ -52,7 +57,27 @@ export function Hero() {
         </div>
 
         <div className="order-1 flex items-center justify-center md:order-2">
-          <MaskGlow className="aspect-[4/5] w-full max-w-sm" />
+          <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-[2rem]">
+            <div
+              className="pointer-events-none absolute inset-0 z-10 motion-safe:animate-pulse-slow"
+              style={{
+                boxShadow: "inset 0 0 80px 20px rgba(255,90,60,0.25)",
+              }}
+              aria-hidden
+            />
+            {heroImage ? (
+              <Image
+                src={heroImage.url}
+                alt={heroImage.altText ?? "Velunna Glow Mask"}
+                fill
+                sizes="(min-width: 768px) 24rem, 100vw"
+                className="object-cover"
+                priority
+              />
+            ) : (
+              <div className="h-full w-full bg-ember/10" aria-hidden />
+            )}
+          </div>
         </div>
       </div>
 
