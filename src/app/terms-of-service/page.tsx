@@ -491,9 +491,8 @@ export default function TermsOfServicePage() {
         These Terms of Service and any separate agreements whereby we
         provide you Services shall be governed by and construed in
         accordance with the federal and state or territorial courts in
-        the jurisdiction where Velunna is headquartered (
-        <mark>state to be confirmed</mark>). You and Velunna consent to
-        venue and personal jurisdiction in such courts.
+        North Carolina, where Velunna is headquartered. You and Velunna
+        consent to venue and personal jurisdiction in such courts.
       </p>
 
       <h2>Section 22 &mdash; Headings</h2>

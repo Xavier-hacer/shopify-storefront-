@@ -17,10 +17,7 @@ export default function LegalNoticePage() {
       <ul>
         <li>Business/Trade Name: Velunna</li>
         <li>Legal Entity Name: Velunna</li>
-        <li>
-          Business Address: 3301 Aster CT{" "}
-          <mark>[complete with city, state &amp; ZIP]</mark>
-        </li>
+        <li>Business Address: 3301 Aster Ct, Wilmington, NC 28409</li>
         <li>
           Contact Email:{" "}
           <a href="mailto:jack.loop@icloud.com">jack.loop@icloud.com</a>
@@ -117,8 +114,8 @@ export default function LegalNoticePage() {
       <h2>7. Governing Law</h2>
       <p>
         This Legal Notice and your use of the Site shall be governed by
-        the laws of the State of <mark>[state to be confirmed]</mark>,
-        United States, without regard to conflict of law principles.
+        the laws of the State of North Carolina, United States, without
+        regard to conflict of law principles.
       </p>
 
       <h2>8. Changes to This Notice</h2>
