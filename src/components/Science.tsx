@@ -18,7 +18,7 @@ const wavelengths = [
 
 export function Science() {
   return (
-    <section id="science" className="mx-auto max-w-6xl px-6 py-28">
+    <section id="science" className="mx-auto max-w-6xl scroll-mt-24 px-6 py-28">
       <div className="max-w-2xl">
         <p className="text-xs uppercase tracking-[0.3em] text-stone">The Science</p>
         <h2 className="mt-4 font-display text-4xl leading-tight text-porcelain sm:text-5xl">

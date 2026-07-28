@@ -1,5 +1,6 @@
 import { ProductSlideshow } from "./ProductSlideshow";
 import { QuantityBuyBox } from "./QuantityBuyBox";
+import { TrustBadges } from "./TrustBadges";
 import type { Product } from "@/lib/types";
 
 const included = [
@@ -25,7 +26,7 @@ export function Buy({ product }: { product: Product }) {
     : null;
 
   return (
-    <section id="buy" className="mx-auto max-w-6xl px-6 py-28">
+    <section id="buy" className="mx-auto max-w-6xl scroll-mt-24 px-6 py-28">
       <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
         <div className="flex items-center justify-center">
           <ProductSlideshow images={product.images} />
@@ -63,6 +64,7 @@ export function Buy({ product }: { product: Product }) {
             ) : (
               <p className="text-sm text-stone">Currently unavailable.</p>
             )}
+            <TrustBadges />
           </div>
 
           <div className="mt-10 border-t border-line pt-6">
