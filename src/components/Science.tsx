@@ -14,6 +14,11 @@ const wavelengths = [
     range: "~415nm",
     desc: "A shorter wavelength commonly used alongside red light in clinic protocols for clearer-looking skin.",
   },
+  {
+    name: "Yellow Light",
+    range: "~590nm",
+    desc: "Used in protocols aimed at firming and calming the look of skin, often paired with red light for an overall rejuvenation routine.",
+  },
 ];
 
 export function Science() {
@@ -32,7 +37,7 @@ export function Science() {
         </p>
       </div>
 
-      <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-2xl bg-line md:grid-cols-3">
+      <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-2xl bg-line sm:grid-cols-2 lg:grid-cols-4">
         {wavelengths.map((w) => (
           <div key={w.name} className="bg-ink p-8">
             <p className="font-display text-3xl text-ember-soft">{w.range}</p>

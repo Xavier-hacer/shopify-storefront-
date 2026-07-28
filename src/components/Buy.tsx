@@ -10,7 +10,8 @@ const included = [
 ];
 
 const specs = [
-  "7 light modes — red, blue & near-infrared (620–850nm)",
+  "7 light modes — red & near-infrared (620–850nm), plus blue and yellow",
+  "IPX7 waterproof rating",
   "Cordless, rechargeable battery",
   "Eye-safe honeycomb light-diffusing shield",
   "10-minute auto-timer per session",
