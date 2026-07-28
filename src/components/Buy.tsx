@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ProductSlideshow } from "./ProductSlideshow";
 import { QuantityBuyBox } from "./QuantityBuyBox";
 import type { Product } from "@/lib/types";
 
@@ -17,9 +17,6 @@ const specs = [
 
 export function Buy({ product }: { product: Product }) {
   const variant = product.variants[0];
-  const buyImage =
-    product.images.find((img) => img.url.includes("bb280d8b436bb89")) ??
-    product.images[0];
   const price = variant
     ? new Intl.NumberFormat("en-US", {
         style: "currency",
@@ -31,19 +28,7 @@ export function Buy({ product }: { product: Product }) {
     <section id="buy" className="mx-auto max-w-6xl px-6 py-28">
       <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
         <div className="flex items-center justify-center">
-          <div className="relative aspect-square w-full max-w-sm overflow-hidden rounded-[2rem]">
-            {buyImage ? (
-              <Image
-                src={buyImage.url}
-                alt={buyImage.altText ?? "Velunna Glow Mask"}
-                fill
-                sizes="(min-width: 768px) 24rem, 100vw"
-                className="object-cover"
-              />
-            ) : (
-              <div className="h-full w-full bg-ember/10" aria-hidden />
-            )}
-          </div>
+          <ProductSlideshow images={product.images} />
         </div>
 
         <div>
