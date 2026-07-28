@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Nav() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-line bg-ink/70 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-9 z-40 border-b border-line bg-ink/70 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <Image
           src="/velunna-logo.png"

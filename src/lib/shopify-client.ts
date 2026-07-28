@@ -39,3 +39,37 @@ export async function createCartAndGetCheckoutUrl(variantId: string, quantity = 
 
   return checkoutUrl;
 }
+
+const CUSTOMER_CREATE_MUTATION = `
+  mutation CustomerCreate($input: CustomerCreateInput!) {
+    customerCreate(input: $input) {
+      customer { id }
+      customerUserErrors { code message }
+    }
+  }
+`;
+
+export async function subscribeEmail(email: string): Promise<void> {
+  const res = await fetch(`https://${domain}/api/${apiVersion}/graphql.json`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-Shopify-Storefront-Access-Token": publicToken!,
+    },
+    body: JSON.stringify({
+      query: CUSTOMER_CREATE_MUTATION,
+      variables: {
+        input: { email, acceptsMarketing: true, password: crypto.randomUUID() },
+      },
+    }),
+  });
+
+  const json = await res.json();
+  const errors = json?.data?.customerCreate?.customerUserErrors as
+    | { code: string; message: string }[]
+    | undefined;
+
+  if (errors?.length && !errors.some((e) => e.code === "TAKEN")) {
+    throw new Error(errors.map((e) => e.message).join(", "));
+  }
+}

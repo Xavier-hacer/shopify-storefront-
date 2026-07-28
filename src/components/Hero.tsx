@@ -2,7 +2,7 @@ import { MaskGlow } from "./MaskGlow";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden pt-24">
+    <section className="relative flex min-h-screen items-center overflow-hidden pt-32">
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.04]"
         style={{
