@@ -16,6 +16,10 @@ const faqs = [
     a: "No. It's cordless and rechargeable via the included USB-C cable, so you can move freely while wearing it.",
   },
   {
+    q: "Is it waterproof?",
+    a: "Yes — the mask carries an IPX7 water-resistance rating, so it can handle splashes and light moisture as part of your skincare routine.",
+  },
+  {
     q: "What's covered if something goes wrong with my order?",
     a: "Order and shipping details are confirmed at checkout, and you can reach out any time with questions about your specific order.",
   },
