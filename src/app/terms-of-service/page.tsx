@@ -521,7 +521,7 @@ export default function TermsOfServicePage() {
       <h2>Section 24 &mdash; Contact Information</h2>
       <p>
         Questions about the Terms of Service should be sent to us at{" "}
-        <a href="mailto:jack.loop@icloud.com">jack.loop@icloud.com</a>.
+        <a href="mailto:xfuller.business@gmail.com">xfuller.business@gmail.com</a>.
       </p>
     </PolicyLayout>
   );

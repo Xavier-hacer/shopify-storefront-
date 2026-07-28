@@ -33,7 +33,7 @@ export default function ShippingPolicyPage() {
       <h2>Contact Us</h2>
       <p>
         If you have any questions about your order, please contact us at{" "}
-        <a href="mailto:jack.loop@icloud.com">jack.loop@icloud.com</a>.
+        <a href="mailto:xfuller.business@gmail.com">xfuller.business@gmail.com</a>.
       </p>
     </PolicyLayout>
   );

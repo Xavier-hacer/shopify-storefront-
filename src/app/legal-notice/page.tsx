@@ -20,7 +20,7 @@ export default function LegalNoticePage() {
         <li>Business Address: 3301 Aster Ct, Wilmington, NC 28409</li>
         <li>
           Contact Email:{" "}
-          <a href="mailto:jack.loop@icloud.com">jack.loop@icloud.com</a>
+          <a href="mailto:xfuller.business@gmail.com">xfuller.business@gmail.com</a>
         </li>
         <li>Phone: +1 910-444-9018</li>
       </ul>
@@ -128,7 +128,7 @@ export default function LegalNoticePage() {
       <h2>9. Contact</h2>
       <p>
         For questions regarding this Legal Notice, contact us at{" "}
-        <a href="mailto:jack.loop@icloud.com">jack.loop@icloud.com</a> or
+        <a href="mailto:xfuller.business@gmail.com">xfuller.business@gmail.com</a> or
         call +1 910-444-9018.
       </p>
     </PolicyLayout>

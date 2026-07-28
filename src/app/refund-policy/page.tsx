@@ -19,7 +19,7 @@ export default function RefundPolicyPage() {
       </p>
       <p>
         To start a return, you can contact us at{" "}
-        <a href="mailto:jack.loop@icloud.com">jack.loop@icloud.com</a>.
+        <a href="mailto:xfuller.business@gmail.com">xfuller.business@gmail.com</a>.
         Please note that returns will need to be sent to the following
         address: 3301 Aster Ct, Wilmington, NC 28409.
       </p>
@@ -31,7 +31,7 @@ export default function RefundPolicyPage() {
       </p>
       <p>
         You can always contact us for any return question at{" "}
-        <a href="mailto:jack.loop@icloud.com">jack.loop@icloud.com</a>.
+        <a href="mailto:xfuller.business@gmail.com">xfuller.business@gmail.com</a>.
       </p>
 
       <h2>Damages and issues</h2>
@@ -81,7 +81,7 @@ export default function RefundPolicyPage() {
       <p>
         If more than 15 business days have passed since we&apos;ve approved
         your return, please contact us at{" "}
-        <a href="mailto:jack.loop@icloud.com">jack.loop@icloud.com</a>.
+        <a href="mailto:xfuller.business@gmail.com">xfuller.business@gmail.com</a>.
       </p>
     </PolicyLayout>
   );
