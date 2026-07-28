@@ -57,14 +57,12 @@ export function Hero({ product }: { product: Product | null }) {
         </div>
 
         <div className="order-1 flex items-center justify-center md:order-2">
-          <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-[2rem]">
-            <div
-              className="pointer-events-none absolute inset-0 z-10 motion-safe:animate-pulse-slow"
-              style={{
-                boxShadow: "inset 0 0 80px 20px rgba(255,90,60,0.25)",
-              }}
-              aria-hidden
-            />
+          <div
+            className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-[2rem] motion-safe:animate-pulse-slow"
+            style={{
+              boxShadow: "0 0 60px 10px rgba(255,90,60,0.25)",
+            }}
+          >
             {heroImage ? (
               <Image
                 src={heroImage.url}
