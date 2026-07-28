@@ -467,7 +467,7 @@ export default function PrivacyPolicyPage() {
         Should you have any questions about our privacy practices or this
         Privacy Policy, or if you would like to exercise any of the rights
         available to you, please call +1 910-444-9018 or email us at{" "}
-        <a href="mailto:jack.loop@icloud.com">jack.loop@icloud.com</a>. For
+        <a href="mailto:xfuller.business@gmail.com">xfuller.business@gmail.com</a>. For
         the purpose of applicable data protection laws, we are the data
         controller of your personal information.
       </p>
