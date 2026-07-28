@@ -14,9 +14,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://velunna.vercel.app"),
   title: "Velunna Glow Mask™ | Red Light Therapy at Home",
   description:
     "Clinical-grade red and near-infrared light therapy in a cordless, eye-safe mask. 10 minutes a night for visibly firmer, calmer, more radiant skin.",
+  openGraph: {
+    title: "Velunna Glow Mask™ | Red Light Therapy at Home",
+    description:
+      "Med-spa red light therapy, brought home. 10 minutes a night for visibly firmer, calmer, more radiant skin.",
+    url: "https://velunna.vercel.app",
+    siteName: "Velunna",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Velunna Glow Mask™ | Red Light Therapy at Home",
+    description:
+      "Med-spa red light therapy, brought home. 10 minutes a night for visibly firmer, calmer, more radiant skin.",
+  },
 };
 
 export default function RootLayout({
