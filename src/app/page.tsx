@@ -15,7 +15,7 @@ export default async function Home() {
     <div className="flex flex-1 flex-col">
       <Nav />
       <main className="flex-1">
-        <Hero product={product} />
+        <Hero />
         <TrustBar />
         <Science />
         <HowItWorks />
